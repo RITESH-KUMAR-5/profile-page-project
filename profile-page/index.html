@@ -1,0 +1,82 @@
+pwd<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal profile page introducing Ritesh, his skills, and contact details.">
+  <title>Ritesh Kumar | Profile</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="navigation" aria-label="Main navigation">
+      <a class="brand" href="#home">RK<span>.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="hero" id="home">
+      <p class="eyebrow">HELLO, I'M</p>
+      <h1>Ritesh Kumar</h1>
+      <p class="hero-copy">Software engineer who enjoys building useful, accessible web experiences.</p>
+      <a class="button" href="#contact">Get in touch</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="section about-section" id="about" aria-labelledby="about-title">
+      <div class="section-heading">
+        <p class="eyebrow">A LITTLE INTRODUCTION</p>
+        <h2 id="about-title">About me</h2>
+      </div>
+      <p class="about-copy">I enjoy solving problems, learning new technologies, and turning ideas into simple digital experiences. I value readable code, thoughtful design, teamwork, and continuous improvement. This page is a small example of semantic HTML and responsive CSS.</p>
+    </section>
+
+    <section class="section skills-section" id="skills" aria-labelledby="skills-title">
+      <div class="section-heading">
+        <p class="eyebrow">WHAT I WORK WITH</p>
+        <h2 id="skills-title">Skills</h2>
+      </div>
+      <ul class="skills-list">
+        <li>HTML5 &amp; semantic markup</li>
+        <li>CSS3 &amp; responsive design</li>
+        <li>JavaScript fundamentals</li>
+        <li>C programming</li>
+        <li>Git &amp; version control</li>
+        <li>Debugging and problem-solving</li>
+      </ul>
+    </section>
+
+    <section class="section contact-section" id="contact" aria-labelledby="contact-title">
+      <div class="section-heading">
+        <p class="eyebrow">LET'S CONNECT</p>
+        <h2 id="contact-title">Contact me</h2>
+        <p>Have a question or want to work together? Send a message using the form below.</p>
+      </div>
+      <form class="contact-form" action="#" method="post">
+        <div class="form-field">
+          <label for="name">Your name</label>
+          <input id="name" name="name" type="text" autocomplete="name" placeholder="Enter your name" required>
+        </div>
+        <div class="form-field">
+          <label for="email">Email address</label>
+          <input id="email" name="email" type="email" autocomplete="email" placeholder="you@example.com" required>
+        </div>
+        <div class="form-field">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message..." required></textarea>
+        </div>
+        <button class="button" type="submit">Send message</button>
+        <p class="form-note">Demo form: connect a backend or form service to receive submissions.</p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year">2026</span> Ritesh Kumar. Built with semantic HTML and CSS.</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+</body>
+</html>
